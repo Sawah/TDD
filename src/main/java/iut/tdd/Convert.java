@@ -23,6 +23,12 @@ public class Convert {
 		h.put("14", "quatorze");
 		h.put("15", "quinze");
 		h.put("16", "seize");
+		h.put("20", "vingt");
+		h.put("30", "trente");
+		h.put("40", "quarante");
+		h.put("50", "cinquante");
+		h.put("60", "soixante");
+		h.put("100","cent");
 		return h.get(input);
 	}
 	public static String text2num(String input) {
