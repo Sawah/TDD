@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Convert {
 	public String num2text(String input) {
+		
 		HashMap <String,String> h=new HashMap<String, String>();
 		
 		h.put("0", "zéro");
@@ -29,8 +30,13 @@ public class Convert {
 		h.put("50", "cinquante");
 		h.put("60", "soixante");
 		h.put("100","cent");
+		h.put("1000", "mille");
+		h.put("000000","million");
+		h.put("000000000", "milliard");
 		return h.get(input);
 	}
+	
+	
 	public static String text2num(String input) {
 		
 		return null;

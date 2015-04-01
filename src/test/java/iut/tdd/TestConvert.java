@@ -256,4 +256,37 @@ public class TestConvert {
 		// Then
 		Assert.assertEquals(expected, actual);
 	}
+	@Test
+	public void test_num2text_mille () {
+		// Given
+		String input = "1000";
+		String expected = "mille";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_million () {
+		// Given
+		String input = "000000";
+		String expected = "million";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_milliard () {
+		// Given
+		String input = "000000000";
+		String expected = "milliard";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
 }
